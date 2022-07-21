@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  db:
+    container_name: odoo-db
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    ports:
+      - "5432:5432"
+    volumes:
+      - odoo-db:/var/lib/postgresql
+volumes:
+  odoo-db:

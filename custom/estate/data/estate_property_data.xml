@@ -1,0 +1,11 @@
+<odoo>
+
+    <record model="estate.estate.property" id="estate_proproty_first">
+        <field name="name">My First Property</field>
+        <field name="address">shenzhen jinshanbihai</field>
+        <field name="area">220</field>
+        <field name="bathrooms">2</field>
+    </record>
+    <menuitem id="menu_properties" parent="menu_root" name="Ideas" sequence="10" action="estate_proproty_first"/>
+
+</odoo>
